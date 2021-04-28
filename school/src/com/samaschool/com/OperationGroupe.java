@@ -49,5 +49,23 @@ public class OperationGroupe
             return gr;
         }
 
+        public boolean supprimerGroupe(int id)
+        {
+            boolean etat = false;
+            for (int i=0; i<grp.length; i++)
+            {
+                if (grp[i]!=null)
+                {
+                    if (grp[i].getId()==id)
+                    {
+                        grp[i]=null;
+                        etat=true;
+                    }
+                    //System.out.println(grp[i].getNomGroupe());
+                }
+            }
+            return etat;
+        }
+
 
 }

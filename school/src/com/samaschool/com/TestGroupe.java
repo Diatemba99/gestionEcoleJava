@@ -38,16 +38,17 @@ public class TestGroupe
         String text="";
         Groupe gp=null;
         do {
-                System.out.println("1- Rechercher groupe");
-                System.out.println("2- Rechercher groupe");
+                System.out.println("1- Ajouter groupe");
+                System.out.println("2- Supprimer groupe");
                 System.out.println("3- Afficher  groupe");
+                System.out.println("4- Quitter  groupe");
                 System.out.println("Faite votre choix : - ");
                 int choix = s.nextInt();
                     switch (choix)
                     {
                         case 1:
                             System.out.println("Entrer l'id du groupe à chercher: -");
-                             gp = opt.rechercherGroupe(s.nextInt());
+                            gp = opt.rechercherGroupe(s.nextInt());
                             if (gp!=null)
                             {
                                 System.out.println(gp.getNomGroupe());
@@ -56,9 +57,20 @@ public class TestGroupe
                             }
                             break;
                         case 2:
+                            System.out.println("Mettrer l'id du groupe à supprimer");
+                            if (opt.supprimerGroupe(s.nextInt()))
+                                {
+                                    System.out.println("Suppression réussie !!");
+                                }else{
+                                    System.out.println("Ce groupe est introuvable");
+                            }
+
                             break;
                         case 3:
                             opt.afficherGroupe();
+                        case 4:
+
+                            break;
                         default:System.out.println("Mauvais choix");
                     }
                     System.out.println("Voulez-vous continuer? o/n:-");
