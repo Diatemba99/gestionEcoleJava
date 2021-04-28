@@ -12,10 +12,12 @@ public class TestGroupe
     public  static void  main(String[] args)
     {
         Scanner s= new Scanner(System.in);
-        System.out.println("Veuillez entree le nombre de groupe à ajouter:");
+
+        System.out.println("Veuillez entrer le nombre de groupe à ajouter:");
         int nombre =s.nextInt();
         OperationGroupe opt= new OperationGroupe(nombre);
 
+        addGroupe:
         System.out.println("Entrer les infos du groupe: ");
         for (int i=0; i<nombre; i++)
             {
@@ -45,14 +47,22 @@ public class TestGroupe
         Groupe gp=null;
         do {
                 System.out.println("1- Créer un Groupe");
-                System.out.println("2- Supprimer un groupe");
-                System.out.println("3- Afficher  groupe");
-                System.out.println("4- Quitter  groupe");
+                System.out.println("2- Modifier un Groupe");
+                System.out.println("3- Voir les détails d'un groupe");
+                System.out.println("4- Supprimer un groupe");
+                System.out.println("5- Afficher tous les groupes");
+                System.out.println("6- Quitter");
                 System.out.println("Faite votre choix : - ");
                 int choix = s.nextInt();
                     switch (choix)
                     {
                         case 1:
+                            break;
+                        case 2:
+
+
+                            break;
+                        case 3:
                             System.out.println("Entrer l'id du groupe à chercher: -");
                             gp = opt.rechercherGroupe(s.nextInt());
                             if (gp!=null)
@@ -61,21 +71,20 @@ public class TestGroupe
                             }else{
                                 System.out.println("Ce groupe n'hesiste pas");
                             }
-                            break;
-                        case 2:
+                        case 4:
                             System.out.println("Mettrer l'id du groupe à supprimer");
                             if (opt.supprimerGroupe(s.nextInt()))
-                                {
-                                    System.out.println("Suppression réussie !!");
-                                }else{
-                                    System.out.println("Ce groupe est introuvable");
+                            {
+                                System.out.println("Suppression réussie !!");
+                            }else{
+                                System.out.println("Ce groupe est introuvable");
                             }
-
                             break;
-                        case 3:
+                        case 5:
                             opt.afficherGroupe();
-                        case 4:
-                            //System.out.println("A gerer apres");
+                            break;
+                        case 6:
+
                             break;
                         default:System.out.println("Mauvais choix");
                     }
