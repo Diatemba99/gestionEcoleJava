@@ -1,5 +1,6 @@
 package com.samaschool.com;
 
+
 public class OperationGroupe
 {
     // Création de la table Groupe afin d'y mettre les infos du groupe
@@ -24,9 +25,10 @@ public class OperationGroupe
              {
                 if (grp[i]!=null)
                 {
-                    System.out.println(grp[i].getNomGroupe());
-                    System.out.println(grp[i].getDateCreation());
-                    System.out.println(grp[i].getModuleGroupe());
+                    System.out.println("================================================");
+                    System.out.println("NOM DU GROUPE: " + grp[i].getNomGroupe());
+                    System.out.println("DATE DE CREATION: "+ grp[i].getDateCreation());
+                    System.out.println("NOM DU MODULE: "+grp[i].getModuleGroupe());
                 }
              }
         }

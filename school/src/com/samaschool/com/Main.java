@@ -1,8 +1,12 @@
 package com.samaschool.com;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+
 
 public class Main {
 
     public static void main(String[] args) {
+        time();
         menuPrincipal();
         menuGestionGroupe();
 
@@ -30,4 +34,11 @@ public class Main {
         System.out.println("6- Quitter");
         System.out.println("************************************");
     }
+    public static void time( ) {
+        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(dtf.format(now));
+    }
 }
+

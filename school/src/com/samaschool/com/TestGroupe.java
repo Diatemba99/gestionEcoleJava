@@ -1,7 +1,11 @@
 package com.samaschool.com;
 
+
 import java.awt.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+
 
 public class TestGroupe
 {
@@ -21,9 +25,11 @@ public class TestGroupe
                 System.out.println("Entrer le nom du  module:");
                 String moduleGroupe =s.next();
                 //------------------------------------------------------------
-                //Get date and time, generate ID
-                System.out.println("Entrer la date de création du  groupe:");
-                String dateCreation =s.next();
+                //Ce code permet de générer de façon automatique la date
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+                LocalDateTime now = LocalDateTime.now();
+                String dateCreation =dtf.format(now);
+
 
                 System.out.println("Entrer l'ID du  groupe:");
                 int id =s.nextInt();
@@ -38,8 +44,8 @@ public class TestGroupe
         String text="";
         Groupe gp=null;
         do {
-                System.out.println("1- Ajouter groupe");
-                System.out.println("2- Supprimer groupe");
+                System.out.println("1- Créer un Groupe");
+                System.out.println("2- Supprimer un groupe");
                 System.out.println("3- Afficher  groupe");
                 System.out.println("4- Quitter  groupe");
                 System.out.println("Faite votre choix : - ");
@@ -69,7 +75,7 @@ public class TestGroupe
                         case 3:
                             opt.afficherGroupe();
                         case 4:
-                            System.out.println("A gerer apres");
+                            //System.out.println("A gerer apres");
                             break;
                         default:System.out.println("Mauvais choix");
                     }
