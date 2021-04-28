@@ -69,7 +69,7 @@ public class TestGroupe
                         case 3:
                             opt.afficherGroupe();
                         case 4:
-
+                            System.out.println("A gerer apres");
                             break;
                         default:System.out.println("Mauvais choix");
                     }
