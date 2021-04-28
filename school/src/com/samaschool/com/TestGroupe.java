@@ -32,6 +32,8 @@ public class TestGroupe
                 g1.setDateCreation(dateCreation);
                 g1.setId(id);
                 g1.setModuleGroupe(moduleGroupe);
+                //ajout groupe
+                opt.ajoutGroupe(g1);
             }
         String text="";
         Groupe gp=null;
@@ -56,7 +58,7 @@ public class TestGroupe
                         case 2:
                             break;
                         case 3:
-                            gp.afficherGroupe();
+                            opt.afficherGroupe();
                         default:System.out.println("Mauvais choix");
                     }
                     System.out.println("Voulez-vous continuer? o/n:-");
