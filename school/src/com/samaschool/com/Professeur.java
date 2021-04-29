@@ -20,6 +20,13 @@ public class Professeur extends Personne  {
         this.specialite = specialite;
     }
 
+    public String getSpecialite() {
+        return specialite;
+    }
+
+    public void setSpecialite(String specialite) {
+        this.specialite = specialite;
+    }
 }
 
 

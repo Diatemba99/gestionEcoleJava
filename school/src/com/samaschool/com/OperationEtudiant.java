@@ -75,7 +75,6 @@ public class OperationEtudiant {
                     etu[i]=null;
                     etat=true;
                 }
-                //System.out.println(grp[i].getNomGroupe());
             }
         }
         return etat;
