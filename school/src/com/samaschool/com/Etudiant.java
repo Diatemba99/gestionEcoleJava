@@ -9,4 +9,8 @@ public class Etudiant extends Personne  {
         super(ID, prenom, nom, adresse, matricule, nationalite, dateNaissance,
                 lieuNaissance, telephone, email, genre, situationMatrimoniale);
         }
+
+    public Etudiant() {
+
+    }
 }

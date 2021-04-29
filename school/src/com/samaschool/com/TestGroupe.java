@@ -61,8 +61,6 @@ public class TestGroupe
                         case 2:
                             System.out.println("Entrer l'id du groupe à modifier: -");
                             int idgroupe = s.nextInt();
-
-
                             break;
                         case 3:
                             System.out.println("Entrer l'id du groupe à chercher: -");

@@ -1,4 +1,5 @@
 package com.samaschool.com;
+import java.util.Scanner;
 
 
 public class OperationGroupe
@@ -7,7 +8,7 @@ public class OperationGroupe
     private Groupe[] grp;
     private int index;
 
-      OperationGroupe (int taille)
+        OperationGroupe (int taille)
         {
             grp = new Groupe[taille];
         }
@@ -31,6 +32,10 @@ public class OperationGroupe
                     System.out.println("NOM DU MODULE: "+grp[i].getModuleGroupe());
                 }
              }
+        }
+        public static void modifierGroupe()
+        {
+
         }
 
         public Groupe rechercherGroupe(int id)
