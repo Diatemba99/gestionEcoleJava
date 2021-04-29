@@ -8,13 +8,14 @@ public class TestProfesseur {
 
     public  static void  main(String[] args)
     {
+        //Importation de Scanner pour recuperer la saisie du user
         Scanner s= new Scanner(System.in);
 
         System.out.println("Veuillez entrer le nombre de professeur à ajouter:");
         int nombre =s.nextInt();
         OperationProfesseur opt= new OperationProfesseur(nombre);
 
-
+        //Debut Instruction pour ajouter un prof  à l'array
         System.out.println("Entrer les infos du professeur: ");
         for (int i=0; i<nombre; i++)
         {
@@ -48,8 +49,6 @@ public class TestProfesseur {
             System.out.println("Entrer la specialite:");
             String specialite =s.next();
 
-            //System.out.println("Entrer l'ID du  groupe:");
-            //int id =s.nextInt();
 
             p1.setID(ID);
             p1.setPrenom(prenom);

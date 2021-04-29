@@ -1,5 +1,10 @@
 package com.samaschool.com;
 
+/**
+ * La classe Professeur Hérite de la classe Personne
+ * **/
+
+
 public class Professeur extends Personne  {
     private String specialite;
 
@@ -7,7 +12,7 @@ public class Professeur extends Personne  {
     {
         super();
     }
-
+    //Constructeur de la classe Etudiant avec parametre
     public Professeur (int ID,String prenom,String nom,
                        String adresse,String matricule,
                        String nationalite,String dateNaissance,
