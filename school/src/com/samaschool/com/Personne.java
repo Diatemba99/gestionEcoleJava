@@ -1,5 +1,10 @@
 package com.samaschool.com;
 
+/**
+ * Voici la classe mere des Classes Etudiant et Professeur
+ *
+ **/
+
 public class Personne {
         private int ID;
         private String prenom;
@@ -16,6 +21,8 @@ public class Personne {
 
         public Personne() {}
 
+
+        //Constructeur de la Personne
         public Personne(int ID, String prenom, String nom, String adresse, String matricule, String nationalite, String dateNaissance, String lieuNaissance, String telephone, String email, String genre, String situationMatrimoniale) {
             this.ID = ID;
             this.prenom = prenom;
@@ -31,6 +38,7 @@ public class Personne {
             this.situationMatrimoniale = situationMatrimoniale;
         }
 
+    //Les Getters et Setters de la classe
     public int getID() {
         return ID;
     }

@@ -11,13 +11,14 @@ public class OperationEtudiant {
         etu = new Etudiant[taille];
     }
 
-
+    //Cette fonction permet d'ajouter un etudiant au Array Etudiant[]
     public void ajoutEtudiant(Etudiant e)
     {
         etu[index++] = e;
     }
 
 
+    //Cette fonction permet d'afficher tout les étudiants de la classe Etudiant se trouvant dans l'Array
     public void afficherEtudiant()
     {
         for (int i=0; i<etu.length; i++)
@@ -40,11 +41,15 @@ public class OperationEtudiant {
             }
         }
     }
-    public static void modifierGroupe()
+
+    //Fonction pour modifier les informations d'un Etudiant
+    public static void modifierEtudiant()
     {
 
     }
 
+
+    //Fonction pour rechercher un etudiant dans l'Array
     public Etudiant rechercherEtudiant(int id)
     {
         Etudiant et=null;
@@ -63,6 +68,8 @@ public class OperationEtudiant {
         return et;
     }
 
+
+    //Fonction pour supprimer un etudiant dans l'Array
     public boolean supprimerEtudiant(int id)
     {
         boolean etat = false;
