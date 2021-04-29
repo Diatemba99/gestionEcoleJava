@@ -7,13 +7,14 @@ import java.util.Scanner;
 public class TestEtudiant {
     public  static void  main(String[] args)
     {
+        //Importation de Scanner pour recuperer la saisie du user
         Scanner s= new Scanner(System.in);
 
         System.out.println("Veuillez entrer le nombre d'étudiant à ajouter:");
         int nombre =s.nextInt();
         OperationEtudiant opt= new OperationEtudiant(nombre);
 
-
+        //Debut Instruction pour ajouter un etudiant  à l'array
         System.out.println("Entrer les infos de l'etudiant: ");
         for (int i=0; i<nombre; i++)
         {
@@ -46,9 +47,8 @@ public class TestEtudiant {
             String situationMatrimoniale =s.next();
             //------------------------------------------------------------
 
-            //System.out.println("Entrer l'ID du  groupe:");
-            //int id =s.nextInt();
 
+            //mettre les valeurs saisies dans chaque propriete de la classe
             e1.setID(ID);
             e1.setPrenom(prenom);
             e1.setNom(nom);
