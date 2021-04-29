@@ -32,9 +32,9 @@ public class TestEtudiant {
             String matricule =dtf.format(now) + ID;
             System.out.println("Entrer la nationalite:");
             String nationalite =s.next();
-            System.out.println("Entrer la date de naissance:");
+            System.out.println("Entrer la date de naissance ex:[22/04/1964]:");
             String dateNaissance =s.next();
-            System.out.println("Entrer le lieu de Naissance ex:[22/04/1964]:");
+            System.out.println("Entrer le lieu de Naissance:");
             String lieuNaissance =s.next();
             System.out.println("Entrer le numéro:");
             String telephone =s.next();
@@ -46,8 +46,8 @@ public class TestEtudiant {
             String situationMatrimoniale =s.next();
             //------------------------------------------------------------
 
-            System.out.println("Entrer l'ID du  groupe:");
-            int id =s.nextInt();
+            //System.out.println("Entrer l'ID du  groupe:");
+            //int id =s.nextInt();
 
             e1.setID(ID);
             e1.setPrenom(prenom);
@@ -67,11 +67,11 @@ public class TestEtudiant {
         String text="";
         Etudiant etd=null;
         do {
-            System.out.println("1- Créer un Groupe");
-            System.out.println("2- Modifier un Groupe");
-            System.out.println("3- Voir les détails d'un groupe");
-            System.out.println("4- Supprimer un groupe");
-            System.out.println("5- Afficher tous les groupes");
+            System.out.println("1- Ajouter un etudiant");
+            System.out.println("2- Modifier un etudiant");
+            System.out.println("3- Voir les détails d'un etudiant");
+            System.out.println("4- Supprimer un etudiant");
+            System.out.println("5- Afficher tous les etudiants");
             System.out.println("6- Quitter");
             System.out.println("Faite votre choix : - ");
             int choix = s.nextInt();
