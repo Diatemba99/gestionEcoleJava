@@ -69,5 +69,12 @@ public class OperationGroupe
             return etat;
         }
 
+       /**
+        *  public Groupe modifierGroupe(int id)
+        *         {
+        *
+        *         }
+        *
+        * */
 
 }

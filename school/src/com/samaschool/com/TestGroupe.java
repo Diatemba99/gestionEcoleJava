@@ -59,6 +59,8 @@ public class TestGroupe
                         case 1:
                             break;
                         case 2:
+                            System.out.println("Entrer l'id du groupe à modifier: -");
+                            int idgroupe = s.nextInt();
 
 
                             break;
@@ -71,6 +73,7 @@ public class TestGroupe
                             }else{
                                 System.out.println("Ce groupe n'hesiste pas");
                             }
+                            break;
                         case 4:
                             System.out.println("Mettrer l'id du groupe à supprimer");
                             if (opt.supprimerGroupe(s.nextInt()))
@@ -84,7 +87,7 @@ public class TestGroupe
                             opt.afficherGroupe();
                             break;
                         case 6:
-
+                            System.exit(0);
                             break;
                         default:System.out.println("Mauvais choix");
                     }
