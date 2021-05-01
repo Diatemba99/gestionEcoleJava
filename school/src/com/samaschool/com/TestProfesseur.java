@@ -31,7 +31,7 @@ public class TestProfesseur {
             //GENERER MATRICULE
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyMMd");
             LocalDateTime now = LocalDateTime.now();
-            String matricule =dtf.format(now) + ID;
+            String matricule ="ET" + dtf.format(now) + ID;
             System.out.println("Entrer la nationalite:");
             String nationalite =s.next();
             System.out.println("Entrer la date de naissance ex:[22/04/1964]:");
@@ -89,7 +89,7 @@ public class TestProfesseur {
                     pr = opt.rechercherProfesseur(s.nextInt());
                     if (pr!=null)
                     {
-                        System.out.println(pr.getPrenom() + pr.getNom());
+                        System.out.println(pr.getPrenom() + pr.getNom() + pr.getSpecialite());
                     }else{
                         System.out.println("Cet professeur n'hesiste pas");
                     }
