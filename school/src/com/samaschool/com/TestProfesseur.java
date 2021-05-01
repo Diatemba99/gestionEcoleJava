@@ -85,14 +85,15 @@ public class TestProfesseur {
                     int idProf = s.nextInt();
                     break;
                 case 3:
-                    System.out.println("Entrer l'id du professeur à chercher: -");
-                    pr = opt.rechercherProfesseur(s.nextInt());
-                    if (pr!=null)
+                    System.out.println("Mettrer l'id du prof à afficher");
+                    int idprof = s.nextInt();
+                    if (opt.supprimerEtudiant(s.nextInt()))
                     {
-                        System.out.println(pr.getPrenom() + pr.getNom() + pr.getSpecialite());
+                        opt.afficherUnProfesseur();
                     }else{
-                        System.out.println("Cet professeur n'hesiste pas");
+                        System.out.println("Cet professeur est introuvable");
                     }
+
                     break;
                 case 4:
                     System.out.println("Mettrer l'id du prof à supprimer");

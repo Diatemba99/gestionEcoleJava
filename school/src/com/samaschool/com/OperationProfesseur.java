@@ -75,9 +75,21 @@ public class OperationProfesseur {
                     prof[i]=null;
                     etat=true;
                 }
-                //System.out.println(grp[i].getNomGroupe());
             }
         }
         return etat;
+    }
+
+
+
+    public void afficherUnProfesseur()
+    {
+        for (int i=0; i<prof.length; i++)
+        {
+            if (prof[i]!=null)
+            {
+                    System.out.println(prof[i]);
+            }
+        }
     }
 }
