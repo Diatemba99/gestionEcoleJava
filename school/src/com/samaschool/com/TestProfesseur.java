@@ -83,17 +83,12 @@ public class TestProfesseur {
                 case 2:
                     System.out.println("Entrer l'id du professeur à modifier: -");
                     int idProf = s.nextInt();
+                    opt.AjouterProfesseur();
                     break;
                 case 3:
                     System.out.println("Mettrer l'id du prof à afficher");
                     int idprof = s.nextInt();
-                    if (opt.supprimerEtudiant(s.nextInt()))
-                    {
-                        opt.afficherUnProfesseur();
-                    }else{
-                        System.out.println("Cet professeur est introuvable");
-                    }
-
+                    opt.afficherProfesseur();
                     break;
                 case 4:
                     System.out.println("Mettrer l'id du prof à supprimer");
