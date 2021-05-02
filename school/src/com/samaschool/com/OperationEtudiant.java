@@ -113,7 +113,7 @@ public class OperationEtudiant {
     {
         for (int i=0; i<etu.length; i++)
         {
-
+            System.out.println(etu[i]);
         }
     }
 

@@ -16,8 +16,6 @@ public class TestGroupe
         System.out.println("Veuillez entrer le nombre de groupe à ajouter:");
         int nombre =s.nextInt();
         OperationGroupe opt= new OperationGroupe(nombre);
-
-        addGroupe:
         System.out.println("Entrer les infos du groupe: ");
         for (int i=0; i<nombre; i++)
             {
@@ -57,17 +55,21 @@ public class TestGroupe
                     switch (choix)
                     {
                         case 1:
+                            opt.ajouterGroupe();
                             break;
                         case 2:
                             System.out.println("Entrer l'id du groupe à modifier: -");
                             int idgroupe = s.nextInt();
+                            opt.ajouterGroupe();
+                            System.out.println("Modification réussie");
                             break;
                         case 3:
                             System.out.println("Entrer l'id du groupe à chercher: -");
                             gp = opt.rechercherGroupe(s.nextInt());
                             if (gp!=null)
                             {
-                                System.out.println(gp.getNomGroupe());
+                                //System.out.println(gp.getNomGroupe());
+                                opt.afficherGroupe();
                             }else{
                                 System.out.println("Ce groupe n'hesiste pas");
                             }
