@@ -10,14 +10,13 @@ public class TestEtudiant {
         //Importation de Scanner pour recuperer la saisie du user
         Scanner s= new Scanner(System.in);
 
-        //System.out.println("Veuillez entrer le nombre d'étudiant à ajouter:");
-        //int nombre =s.nextInt();
-        int nombre = 0;
+        System.out.println("Veuillez entrer le nombre d'étudiant à ajouter:");
+        int nombre =s.nextInt();
         OperationEtudiant opt= new OperationEtudiant(nombre);
         //opt.ajouterEtudiants();
 
         //Debut Instruction pour ajouter un etudiant  à l'array
-        /**System.out.println("Entrer les infos de l'etudiant: ");
+        System.out.println("Entrer les infos de l'etudiant: ");
         for (int i=0; i<nombre; i++)
         {
             Etudiant e1= new Etudiant();
@@ -65,7 +64,7 @@ public class TestEtudiant {
             e1.setSituationMatrimoniale(situationMatrimoniale);
             //ajout groupe
             opt.ajoutEtudiant(e1);
-        }**/
+        }
         String text="";
         Etudiant etd=null;
         do {
